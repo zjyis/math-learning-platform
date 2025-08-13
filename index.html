@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组合数学学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-calculator"></i>
+                <span>组合数学学习平台</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#textbook" class="nav-link">课本内容</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#exercises" class="nav-link">课后习题</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#applications" class="nav-link">应用窗口</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#algorithms" class="nav-link">算法设计</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 课本内容模块 -->
+        <section id="textbook" class="module">
+            <div class="container">
+                <h2 class="module-title">
+                    <i class="fas fa-book"></i>
+                    课本内容
+                </h2>
+                <div class="chapters-container">
+                    <div class="chapters-list">
+                        <h3>章节列表</h3>
+                        <ul id="chaptersList">
+                            <li><a href="#" data-chapter="1">第一章 排列与组合</a></li>
+                            <li><a href="#" data-chapter="2">第二章 二项式定理</a></li>
+                            <li><a href="#" data-chapter="3">第三章 容斥原理</a></li>
+                            <li><a href="#" data-chapter="4">第四章 递推关系</a></li>
+                            <li><a href="#" data-chapter="5">第五章 生成函数</a></li>
+                            <li><a href="#" data-chapter="6">第六章 鸽巢原理</a></li>
+                            <li><a href="#" data-chapter="7">第七章 图论基础</a></li>
+                            <li><a href="#" data-chapter="8">第八章 组合设计</a></li>
+                            <li><a href="#" data-chapter="9">第九章 概率组合</a></li>
+                            <li><a href="#" data-chapter="10">第十章 组合优化</a></li>
+                        </ul>
+                    </div>
+                    <div class="chapter-content">
+                        <div id="chapterDisplay">
+                            <h3>请选择章节开始学习</h3>
+                            <p>点击左侧章节列表中的任意章节，开始您的组合数学学习之旅！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 课后习题模块 -->
+        <section id="exercises" class="module">
+            <div class="container">
+                <h2 class="module-title">
+                    <i class="fas fa-question-circle"></i>
+                    课后典型习题解析
+                </h2>
+                <div class="exercises-container">
+                    <div class="exercise-filters">
+                        <select id="chapterFilter">
+                            <option value="">选择章节</option>
+                            <option value="1">第一章</option>
+                            <option value="2">第二章</option>
+                            <option value="3">第三章</option>
+                            <option value="4">第四章</option>
+                            <option value="5">第五章</option>
+                            <option value="6">第六章</option>
+                            <option value="7">第七章</option>
+                            <option value="8">第八章</option>
+                            <option value="9">第九章</option>
+                            <option value="10">第十章</option>
+                        </select>
+                        <select id="difficultyFilter">
+                            <option value="">选择难度</option>
+                            <option value="easy">简单</option>
+                            <option value="medium">中等</option>
+                            <option value="hard">困难</option>
+                        </select>
+                    </div>
+                    <div id="exercisesList" class="exercises-list">
+                        <!-- 习题列表将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应用窗口模块 -->
+        <section id="applications" class="module">
+            <div class="container">
+                <h2 class="module-title">
+                    <i class="fas fa-lightbulb"></i>
+                    应用窗口
+                </h2>
+                <div class="applications-container">
+                    <div class="application-cards">
+                        <div class="app-card" data-chapter="1">
+                            <h3>排列组合应用</h3>
+                            <p>密码学、概率统计、计算机科学等领域的实际应用</p>
+                            <button class="app-btn">查看详情</button>
+                        </div>
+                        <div class="app-card" data-chapter="4">
+                            <h3>递推关系应用</h3>
+                            <p>算法设计、动态规划、金融建模等实际应用</p>
+                            <button class="app-btn">查看详情</button>
+                        </div>
+                        <div class="app-card" data-chapter="7">
+                            <h3>图论应用</h3>
+                            <p>网络分析、社交网络、交通规划等实际应用</p>
+                            <button class="app-btn">查看详情</button>
+                        </div>
+                        <div class="app-card" data-chapter="10">
+                            <h3>组合优化应用</h3>
+                            <p>物流优化、生产调度、资源分配等实际应用</p>
+                            <button class="app-btn">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 算法设计模块 -->
+        <section id="algorithms" class="module">
+            <div class="container">
+                <h2 class="module-title">
+                    <i class="fas fa-code"></i>
+                    算法设计
+                </h2>
+                <div class="algorithms-container">
+                    <div class="algorithm-categories">
+                        <div class="category">
+                            <h3>排列组合算法</h3>
+                            <div class="algorithm-item">
+                                <h4>全排列算法</h4>
+                                <div class="code-block">
+                                    <pre><code id="permutationCode">// 全排列算法代码将在这里显示</code></pre>
+                                    <button class="copy-btn" data-target="permutationCode">复制代码</button>
+                                </div>
+                            </div>
+                            <div class="algorithm-item">
+                                <h4>组合生成算法</h4>
+                                <div class="code-block">
+                                    <pre><code id="combinationCode">// 组合生成算法代码将在这里显示</code></pre>
+                                    <button class="copy-btn" data-target="combinationCode">复制代码</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>递推算法</h3>
+                            <div class="algorithm-item">
+                                <h4>斐波那契数列</h4>
+                                <div class="code-block">
+                                    <pre><code id="fibonacciCode">// 斐波那契数列算法代码将在这里显示</code></pre>
+                                    <button class="copy-btn" data-target="fibonacciCode">复制代码</button>
+                                </div>
+                            </div>
+                            <div class="algorithm-item">
+                                <h4>动态规划示例</h4>
+                                <div class="code-block">
+                                    <pre><code id="dpCode">// 动态规划算法代码将在这里显示</code></pre>
+                                    <button class="copy-btn" data-target="dpCode">复制代码</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 组合数学学习平台. 让数学学习更简单！</p>
+        </div>
+    </footer>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
