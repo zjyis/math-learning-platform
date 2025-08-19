@@ -93,9 +93,9 @@ function loadChapter(chapterNumber) {
 function getChapterContent(chapterNumber) {
     const chapters = {
         1: {
-            title: "第一章 排列与组合",
+            title: "第一章 绪论",
             content: `
-                <h3>第一章 排列与组合</h3>
+                <h3>第一章 绪论</h3>
                 <p>排列与组合是组合数学的基础，它们研究的是从有限集合中选择元素的不同方式。</p>
                 
                 <h4>1.1 基本概念</h4>
@@ -128,9 +128,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         2: {
-            title: "第二章 二项式定理",
+            title: "第二章 组合数学基础",
             content: `
-                <h3>第二章 二项式定理</h3>
+                <h3>第二章 组合数学基础</h3>
                 <p>二项式定理是组合数学中的重要定理，它描述了二项式幂的展开形式。</p>
                 
                 <h4>2.1 二项式定理</h4>
@@ -163,9 +163,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         3: {
-            title: "第三章 容斥原理",
+            title: "第三章 母函数及其应用",
             content: `
-                <h3>第三章 容斥原理</h3>
+                <h3>第三章 母函数及其应用</h3>
                 <p>容斥原理是解决集合计数问题的重要工具，它通过"加加减减"的方式避免重复计算。</p>
                 
                 <h4>3.1 基本容斥原理</h4>
@@ -231,9 +231,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         5: {
-            title: "第五章 生成函数",
+            title: "第五章 容斥原理",
             content: `
-                <h3>第五章 生成函数</h3>
+                <h3>第五章 容斥原理</h3>
                 <p>生成函数是处理序列问题的强大工具，它将序列转换为函数形式，便于分析和计算。</p>
                 
                 <h4>5.1 生成函数的定义</h4>
@@ -265,9 +265,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         6: {
-            title: "第六章 鸽巢原理",
+            title: "第六章 抽屉原理",
             content: `
-                <h3>第六章 鸽巢原理</h3>
+                <h3>第六章 抽屉原理</h3>
                 <p>鸽巢原理是组合数学中的基本原理，它描述了将物体放入容器时的必然结果。</p>
                 
                 <h4>6.1 基本鸽巢原理</h4>
@@ -297,9 +297,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         7: {
-            title: "第七章 图论基础",
+            title: "第七章 群论在组合数学中的应用",
             content: `
-                <h3>第七章 图论基础</h3>
+                <h3>第七章 群论在组合数学中的应用</h3>
                 <p>图论是研究图及其性质的数学分支，在计算机科学、网络分析等领域有重要应用。</p>
                 
                 <h4>7.1 图的基本概念</h4>
@@ -331,9 +331,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         8: {
-            title: "第八章 组合设计",
+            title: "第八章 求解组合优化问题的几种智能算法",
             content: `
-                <h3>第八章 组合设计</h3>
+                <h3>第八章 求解组合优化问题的几种智能算法</h3>
                 <p>组合设计研究如何安排元素以满足特定的组合性质，在实验设计、编码理论等领域有应用。</p>
                 
                 <h4>8.1 拉丁方</h4>
@@ -363,9 +363,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         9: {
-            title: "第九章 概率组合",
+            title: "第九章 组合算法",
             content: `
-                <h3>第九章 概率组合</h3>
+                <h3>第九章 组合算法</h3>
                 <p>概率组合结合了概率论和组合数学，研究随机组合结构的性质。</p>
                 
                 <h4>9.1 随机图</h4>
@@ -395,9 +395,9 @@ function getChapterContent(chapterNumber) {
             `
         },
         10: {
-            title: "第十章 组合优化",
+            title: "第十章 编码理论",
             content: `
-                <h3>第十章 组合优化</h3>
+                <h3>第十章 编码理论</h3>
                 <p>组合优化研究在有限选择中寻找最优解的问题，在实际应用中有重要价值。</p>
                 
                 <h4>10.1 基本问题</h4>

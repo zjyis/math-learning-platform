@@ -419,6 +419,74 @@ body {
     background: #5a67d8;
 }
 
+/* 慕课模块 */
+.mooc-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.video-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.video-wrapper {
+    background: #f3f4f6;
+}
+
+.video-cover,
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-info {
+    padding: 0.75rem 1rem 1rem;
+}
+
+.video-title {
+    color: #111827;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.video-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.video-meta i {
+    color: #9ca3af;
+}
+
+.mooc-tip {
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
 /* 页脚样式 */
 .footer {
     background: #2c3e50;
